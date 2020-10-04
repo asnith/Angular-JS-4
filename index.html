@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html  ng-app='RoutingApp'>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="ap.js"></script>
+	<script type="text/javascript" src="angular-ui-router.min.js"></script>
+	<title>Coursera</title>
+</head>
+<body>
+	<h1 style="color: red; text-align: center;font-size: 40px;">Welcome to our Restaurant</h1>
+	<a ui-sref="tab1" ui-sref-active="activeTab" style="text-decoration: none;font-size: 30px;"></a>
+	<a ui-sref="categories" ui-sref-active="activeTab" style="text-decoration: none;font-size: 30px;">CATEGORIES LIST</a>
+	
+	<ui-view></ui-view>
+
+</body>
+</html>
